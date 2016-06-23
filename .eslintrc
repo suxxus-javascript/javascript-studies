@@ -1,0 +1,24 @@
+{
+  "extends": "eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "Promise": true
+  },
+  "rules": {
+    "quotes": [
+      2,
+      "single",
+      "avoid-escape"
+    ],
+    "func-style": [
+      2,
+      "expression"
+    ],
+    "no-trailing-spaces": [
+      0
+    ]
+  }
+}
