@@ -18,9 +18,11 @@ node ./src/<dir>/<file>
 ## Links
 
 ### promises
-*[promisejs.org](https://www.promisejs.org/patterns/)
-*[JavaScript Promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
-*[Promises: All The Wrong Ways](https://blog.getify.com/promises-wrong-ways)
+[promisejs.org](https://www.promisejs.org/patterns/)
+
+[JavaScript Promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
+
+[Promises: All The Wrong Ways](https://blog.getify.com/promises-wrong-ways)
 
 ## Books
 [JavaScript Allongé, author: Reg “raganwald” Braithwaite](https://leanpub.com/javascriptallongesix)
