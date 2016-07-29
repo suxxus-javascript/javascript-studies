@@ -13,7 +13,7 @@
         }
 
         return function() {
-            var ordinaryArgs = (1 <= arguments.length ? slice.call(arguments, 0, fn.length - 1) : []),
+            var ordinaryArgs = (arguments.length >= 1 ? slice.call(arguments, 0, fn.length - 1) : []),
                 restOfTheArgsList = slice.call(arguments, fn.length - 1),
                 args = (fn.length <= arguments.length ? ordinaryArgs.concat([restOfTheArgsList]) : []);
 
@@ -33,12 +33,12 @@
             'president': president,
             'vice': vice,
             'others': r
-        })
+        });
     });
 
 
     console.log(
         foo('Julia', 'Alberta', 'Ximena', 'Lois', 'Arantxa', 'Fernando')
-    )
+    );
 
 }());
