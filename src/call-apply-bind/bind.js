@@ -78,7 +78,6 @@ var insideLoop = function() {
         console.log('i= ', i);
         i += 1;
     }
-
 };
 console.log(
     '-------------------------\n',
