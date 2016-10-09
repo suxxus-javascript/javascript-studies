@@ -89,16 +89,13 @@ var table3 = {
     entriesTable3: []
 };
 
-table.forEach(table.addEntry, table2)
+table.forEach(table.addEntry, table2);
 table.forEach(function(key, value, i) {
-    var x = {}
+    var x = {};
     x[key] = value;
     this.entriesTable3[i] = x;
-}, table3)
+}, table3);
 
 console.log('table => ', table.entries);
 console.log('table2 => ', table2);
 console.log('table3 => ', table3);
-
-
-
