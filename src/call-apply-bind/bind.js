@@ -79,7 +79,7 @@ var insideLoop = function() {
         i += 1;
     }
 
-    return 'insideLoop';
+   // return 'insideLoop';
 };
 console.log(
     '-------------------------\n',
