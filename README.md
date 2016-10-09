@@ -24,6 +24,9 @@ node ./src/<dir>/<file>
 
 [Promises: All The Wrong Ways](https://blog.getify.com/promises-wrong-ways)
 
+### bind - apply - call
+[JavaScript’s Apply, Call, and Bind Methods](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+
 ## Books
 [JavaScript Allongé, author: Reg “raganwald” Braithwaite](https://leanpub.com/javascriptallongesix)
 
