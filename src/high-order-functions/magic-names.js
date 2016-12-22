@@ -11,8 +11,8 @@
     console.log('foo should be: 2', foo === 2);
 
     var baaz = (function() {
-        arguments[0];
-    })(2);
+        console.log(arguments[0]);
+    }(2));
 
     console.log('baaz should be: 1', baaz === 1);
 
