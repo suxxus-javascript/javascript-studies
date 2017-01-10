@@ -25,12 +25,6 @@ var box = function(x) {
 
 };
 
-// var moneyToFloat = function moneyToFloat(str) {
-
-//     return parseFloat(str.replace(/$/g, ''));
-
-// };
-
 var moneyToFloat = function(str) {
 
     return box(str.replace(/$/g, ''))
@@ -41,14 +35,6 @@ var moneyToFloat = function(str) {
         });
 
 };
-
-// var percentToFloat = function percentToFloat(str) {
-
-//     return parseFloat(
-//         str.replace(/%/g, '')
-//     ) * 0.01;
-
-// };
 
 var percentToFloat = function(str) {
 
@@ -65,14 +51,6 @@ var percentToFloat = function(str) {
         });
 
 };
-
-// var applyDiscount = function(price, discount) {
-
-//     var cost = moneyToFloat(price);
-//     var savings = percentToFloat(discount);
-//     return cost - (cost * savings);
-
-// };
 
 var applyDiscount = function(price, discount) {
 
