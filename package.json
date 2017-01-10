@@ -1,30 +1,32 @@
 {
-    "name": "javascript-studies",
-    "version": "0.0.0",
-    "description": "studies",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/suxxuscomp/javascript-studies"
-    },
-
-    "devDependencies": {
-        "eslint": "2.12.0",
-        "eslint-cli": "1.1.0",
-        "eslint-config-eslint": "3.0.0",
-        "updtr": "0.1.15",
-        "watch-cli": "0.2.1"
-    },
-    "scripts": {
-        "lint": "eslint --color  src || true",
-        "dev": "watch -p 'src/**/*.js' -c 'npm run lint'",
-        "check": "npm outdated --depth=0",
-        "update": "updtr"
-    },
-    "keywords": [
-        "javascript",
-        "studies"
-    ],
-    "author": "suxxus",
-    "license": "ISC"
+  "name": "javascript-studies",
+  "version": "0.0.0",
+  "description": "studies",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suxxuscomp/javascript-studies"
+  },
+  "devDependencies": {
+    "eslint": "2.12.0",
+    "eslint-cli": "1.1.0",
+    "eslint-config-eslint": "3.0.0",
+    "updtr": "0.1.15",
+    "watch-cli": "0.2.1"
+  },
+  "scripts": {
+    "lint": "eslint --color  src || true",
+    "dev": "watch -p 'src/**/*.js' -c 'npm run lint'",
+    "check": "npm outdated --depth=0",
+    "update": "updtr"
+  },
+  "keywords": [
+    "javascript",
+    "studies"
+  ],
+  "author": "suxxus",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "0.23.0"
+  }
 }
