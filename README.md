@@ -27,6 +27,9 @@ node ./src/<dir>/<file>
 ### bind - apply - call
 [JavaScript’s Apply, Call, and Bind Methods](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
 
+### composable - video -
+[Professor Frisby Introduces Composable Functional JavaScript](https://egghead.io/courses/professor-frisby-introduces-function-composition?utm_source=javascriptweekly&utm_medium=email)
+
 ## Books
 [JavaScript Allongé, author: Reg “raganwald” Braithwaite](https://leanpub.com/javascriptallongesix)
 
