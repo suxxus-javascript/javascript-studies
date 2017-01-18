@@ -32,5 +32,4 @@ node ./src/<dir>/<file>
 
 ## Books
 [JavaScript Allongé, author: Reg “raganwald” Braithwaite](https://leanpub.com/javascriptallongesix)
-
 [You Don't Know JS: Async & Performance, author: Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance)
