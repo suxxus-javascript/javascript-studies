@@ -1,20 +1,11 @@
 const R = require('ramda');
+const percentToFloat = R.compose(R.multiply(0.01), R.replace(/%/g, ''));
+const removeCurrencySimbol = R.compose(Number, replace(/\$|€/g, ''));
+const calcFinalPrice = R.curry((cost, savings) => cost - (cost * savings));
+const getFinalPrice = (price, disc) =>
+    R.compose(
+        (fn) => fn(percentToFloat(disc)),
+        (fn) => fn(removeCurrencySimbol(price))
+    )(calcFinalPrice);
 
-const toNumber = str => Number(str);
-const removeCurrencySimbol = (str) => str.replace(/$|€/g, '');
-const removePercentSymbol = (str) => str.replace(/%/g, '');
-const moveDecimals = (num) => num * 0.01;
-const calcFinalPrice = (cost, savings) => cost - (cost * savings);
-const moneyToFloat = R.pipe(
-    removeCurrencySimbol,
-    toNumber
-);
-const percentToFloat = R.pipe(
-    removePercentSymbol,
-    toNumber,
-    moveDecimals
-);
-const appDisc = (price, discount) =>
-    calcFinalPrice(moneyToFloat(price), percentToFloat(discount));
-
-console.log(appDisc('10.55€', '10%'));
+getFinalPrice('12$', '10%');
