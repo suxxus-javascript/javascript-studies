@@ -9,5 +9,5 @@ const applyDiscount = (price, disc) =>
     )(calcFinalPrice);
 
 console.log(
-    applyDiscount('12$', '10%')
+    applyDiscountgst('12$', '10%')
 );
