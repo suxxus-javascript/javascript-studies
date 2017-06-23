@@ -77,3 +77,23 @@ console.log(
     'ob2 scores (ob.scores borrowed - binding of ob2 -)\n',
     ob2.scores
 );
+
+
+const g = fn => (...args) => fn.apply(null, args);
+
+const sum = (a, b) => a + b;
+const inc = a => a + 1;
+
+let f = g(sum);
+
+console.log(
+'-------------------------\n',
+f(1, 2)
+);
+
+f = g(inc);
+
+console.log(
+'-------------------------\n',
+f(2)
+);

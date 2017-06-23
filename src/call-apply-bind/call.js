@@ -20,6 +20,7 @@ console.log(
     'foo.call =>', foo.call(null, 1, 2, 3, 4, 5)
 );
 
+
 // the call method comes in handy for calling methods
 // that may have been removed, modified, or overriden
 var dict = Object.create(null, {
@@ -72,6 +73,7 @@ var table = {
         var entry;
         for (var i = 0, n = entries.length; i < n; i++) {
             entry = entries[i];
+            console.log('thisArg--> ', thisArg);
             f.call(thisArg, entry.key, entry.value, i);
         }
     }
