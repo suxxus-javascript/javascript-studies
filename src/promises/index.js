@@ -16,11 +16,11 @@
     var promise = new Promise(function(resolve, reject) {
         // do a thing, possibly async,
         setTimeout(function() {
-            var resolved = true;
+            var resolved = false;
             if (resolved) {
                 resolve('Stuff worked!');
             } else {
-                reject(Error('It broke'));
+                reject(('It broke'));
             }
         }, 1000);
     });
@@ -62,4 +62,23 @@
         }, function(err) {
             console.log(err);
         });
+
+
+    var p = function(greet) {
+        if (greet === 'hello') {
+            return Promise.resolve('peter');
+        }
+
+        return Promise.reject('ouch');
+    };
+
+    p('hello').then(function(x) {
+            console.log('hi from here ', x);
+        })
+        .catch(function(e) {
+            console.log('he says ', e);
+        })
+
+
+
 }());
